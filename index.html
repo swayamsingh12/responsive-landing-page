@@ -1,0 +1,286 @@
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      height: 80vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("hero.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    .hero a {
+      display: inline-block;
+      padding: 15px 25px;
+      background: #ff9900;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .features {
+      padding: 60px 0;
+      background: #f0f0f0;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .features .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+
+    .features .col {
+      width: 33.33%;
+      padding: 15px;
+    }
+
+    .features .col img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .features .col h3 {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .features .col p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .testimonials {
+      padding: 60px 0;
+    }
+
+    .testimonials h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .testimonials .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+
+    .testimonials .col {
+      width: 50%;
+      padding: 15px;
+    }
+
+    .testimonials .col .testimonial {
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+
+    .testimonials .col .testimonial .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      float: left;
+      margin-right: 20px;
+    }
+
+    .testimonials .col .testimonial .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .testimonials .col .testimonial .name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .testimonials .col .testimonial .role {
+      font-size: 16px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .testimonials .col .testimonial .quote {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .testimonials .col .testimonial .quote::before {
+      content: "\201C";
+      font-size: 40px;
+      color: #ff9900;
+      position: absolute;
+      left: -10px;
+      top: -10px;
+    }
+
+    .testimonials .col .testimonial .quote::after {
+      content: "\201D";
+      font-size: 40px;
+      color: #ff9900;
+      position: absolute;
+      right: -10px;
+      bottom: -10px;
+    }
+
+    .cta {
+      padding: 60px 0;
+      background: #ff9900;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 15px 25px;
+      background: white;
+      color: #ff9900;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 20px;
+      }
+
+      .features .col {
+        width: 50%;
+      }
+
+      .testimonials .col {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .features .col {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <div class="content">
+        <h1>Introducing myself</h1>
+        <p> Swayam singh web Developer</p>
+        <a href="#">Get Started</a>
+      </div>
+    </div>
+    <div class="features">
+      <h2>Why Me</h2>
+      <div class="row">
+        <div class="col">
+          <img src="feature1.jpg" alt="Feature 1">
+          <h3>Code faster and smarter</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus suscipit expedita, repudiandae, debitis accusantium corrupti magni repellendus optio aperiam aliquam adipisci. Fugit iusto natus quisquam aperiam, suscipit corporis quia in.</p>
+        </div>
+        <div class="col">
+          <img src="feature2.jpg" alt="Feature 2">
+          <h3>Learn from the best</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore itaque sint fugiat asperiores ut? Magni perferendis delectus ratione rem quaerat deserunt, nulla aperiam eum labore eaque ab nemo veritatis. Nam.</p>
+        </div>
+        <div class="col">
+          <img src="feature3.jpg" alt="Feature 3">
+          <h3>Explore new possibilities</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam eius officia blanditiis. Magnam nam beatae libero nemo sunt saepe nulla, maiores corrupti fugit consequuntur magni suscipit ratione doloribus quibusdam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials">
+      <h2>What our users say</h2>
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <div class="avatar">
+              <img src="user1.jpg" alt="User 1">
+            </div>
+            <div class="text">
+              <div class="name">Alice</div>
+              <div class="role">Web Developer</div>
+              <div class="quote">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime consectetur ut laborum quibusdam similique laboriosam veritatis. Voluptas praesentium dolores, distinctio provident ab tenetur consectetur sint nesciunt ducimus, animi harum laboriosam.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="testimonial">
+            <div class="avatar">
+              <img src="" alt="User 2">
+            </div>
+            <div class="text">
+              <div class="name">Bob</div>
+              <div class="role">Data Scientist</div>
+              <div class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta possimus, quasi debitis non, laborum iste et eos provident odio officiis sint voluptatem labore aperiam, eum sapiente optio modi tempora.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta">
+      <h2>Ready to try </h2>
+      <p>Sign up today and get most powerful services.</p>
+      <a href="#">Sign Up Now</a>
+    </div>
+  </div>
+</body>
+</html>
